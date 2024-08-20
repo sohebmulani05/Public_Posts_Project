@@ -1,0 +1,21 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+<body class="body">
+    <div class="col-6 offset-4 md-4">
+    <h2>Edit Your Form</h2>
+    
+   <form method="post" action="/posts/<%=singlePost.id%>?_method=PATCH" >
+
+
+    <p>Id : <%= singlePost.id %></p>
+    <h3>Username : <%= singlePost.username %></h3>
+    <textarea rows="10" cols="40" name="content"  class="form-control" ><%= singlePost.content  %></textarea> <br>
+    <button class="btn btn-outline-dark">SUBMIT</button>
+    <a href="http://localhost:8080/posts"><button class="btn btn-outline-dark">BACK</button></a>
+    
+   </form>
+</div>
+    
+</body>
+
+

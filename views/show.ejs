@@ -1,0 +1,20 @@
+<% layout("/layouts/boilerplate") %>
+
+    <br><br>
+    <div class="offset-4">
+
+        <body class="body">
+            <h2>Here You Are Details</h2>
+            <p>Id : <%= singlePost.id %>
+            </p>
+            <div class="post">
+                <h3>Username : @<%= singlePost.username %>
+                </h3>
+                <div class="content">
+                    <h4>Content : <%= singlePost.content %>
+                    </h4>
+                </div>
+            </div> <br><br>
+            <a href="http://localhost:8080/posts"><button class="btn btn-outline-dark">BACK</button></a>
+        </body>
+    </div>
